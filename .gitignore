@@ -1,4 +1,4 @@
 .vscode
 .cph
-.bin
+**/*.bin
 .exe
