@@ -40,36 +40,11 @@ void output(O a, int n)
 
 void ans()
 {
-    ll x, y, z;
-    cin >> x >> y >> z;
-    if (x == y && x >= z)
-    {
-        ha
-        cout<< x << " " << z << " " << z << endl;
-    }
-    else if (y == z && y >= x)
-    {
-        ha
-        cout<< x << " " << x << " " << y << endl;
-    }
-    else if (x == z && x >= y)
-    {
-        ha
-        cout<< y << " " << x << " " << y << endl;
-    }
-    else
-    {
-        na
-    }
+    int arr[4];
+    cin>>arr[0]>>arr[1]>>arr[2]>>arr[3];
+    sort(arr, arr+4);
+    cout << arr[3] - arr[0] << " " << arr[3] - arr[1] << " " << arr[3] - arr[2] << endl;
 
-    /*
-    x==y x > z,
-    y==z y > x,
-    x==z x>y
-    x=max(a,b)
-    y=max(a,c)
-    z=max(b,c)
-    */
 }
 
 int main()
@@ -81,7 +56,7 @@ int main()
     int s = 1;
     bool ray = 0;
     int t = 1;
-    cin >> t;
+    // cin>>t;
     while (t--)
     {
         if (ray)
