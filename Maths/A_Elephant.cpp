@@ -40,24 +40,18 @@ void output(O a, int n)
 
 void ans()
 {
-    ll a, b;
-    cin >> a >> b;
-    if ((a % b) == 0)
+    int n;
+    cin >> n;
+    int ans = 1;
+    if (n > 5)
     {
-        pt(0)
-    }
-    else
-    {
-        if (a < b)
+        ans = (n / 5);
+        if ((n % 5) != 0)
         {
-            pt(b - a);
-        }
-        else
-        {
-            ll extra = a % b, ans = INT_MAX;
-            pt(b-extra)
+            ans++;
         }
     }
+    pt(ans)
 }
 
 int main()
@@ -69,7 +63,7 @@ int main()
     int s = 1;
     bool ray = 0;
     int t = 1;
-    cin >> t;
+    // cin >> t;
     while (t--)
     {
         // if (ray)
